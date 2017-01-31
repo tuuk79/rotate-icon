@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://use.fontawesome.com/13f4be4666.js"></script>
+        <script>
+        $(document).ready(function() {
+            $(".rotate").click(function() {
+                $(this).toggleClass("down"); 
+            })
+        });
+        </script>
+        <style>
+            .rotate {
+                -moz-transition: all 1s linear;
+                -webkit-transition: all 1s linear;
+                transition: all 1s linear;
+            }
+
+            .rotate.down {
+                -moz-transform:rotate(90deg);
+                -webkit-transform:rotate(90deg);
+                transform:rotate(90deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fa fa-chevron-up rotate"></div>
+    </body>
+</html>
